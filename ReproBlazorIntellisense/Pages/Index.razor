@@ -1,0 +1,17 @@
+﻿@page "/"
+@inject LibWithMvvm.Data data
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        // Intellisense doesn't show the property Id
+        int id = data.Id;
+    }
+}
